@@ -7,7 +7,7 @@ import Main from './Main';
 class App extends Component {
   render() {
     return (
-      <section className="hero is-fullheight is-default is-bold">
+      <section className="hero is-fullheight is-default">
         <Header />
         <Route exact path="/" component={Main} />
         <Route path="/projects" component={Main} />

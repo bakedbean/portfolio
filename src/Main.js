@@ -8,13 +8,12 @@ import Hobbies from './Hobbies';
 
 export default class Main extends React.Component {
   render() {
-    console.log(this.props);
     const { match } = this.props;
 
     return <div className="hero-body">
       <div className="container has-text-centered">
 
-        <div className="tabs is-centered">
+        <div className="tabs is-centered is-hidden-touch">
           <ul>
             <li className={classNames({
               'is-active': match.path === '/'
@@ -28,11 +27,17 @@ export default class Main extends React.Component {
           </ul>
         </div> 
 
-        <Switch>
-          <Route exact path="/" component={Experience} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/hobbies" component={Hobbies} />
-        </Switch>
+        <div className="is-hidden-desktop" style={{ marginBottom: '25px' }}>
+          <Link to="/">Experience</Link> | <Link to="/projects">Projects</Link> | <Link to="/hobbies">Hobbies</Link>
+        </div>
+
+        <div style={{ height: '400px' }}>
+          <Switch>
+            <Route exact path="/" component={Experience} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/hobbies" component={Hobbies} />
+          </Switch>
+        </div>
       </div>
     </div>;
   }
