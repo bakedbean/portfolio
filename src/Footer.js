@@ -6,7 +6,7 @@ export default class Footer extends React.Component {
       <div className="container">
         <div className="tabs is-centered">
           <ul>
-            <li><a>Eben Goodman Copyright 2018</a></li>
+            <li><a></a></li>
           </ul>
         </div>
       </div>

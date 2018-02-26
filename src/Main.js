@@ -13,7 +13,7 @@ export default class Main extends React.Component {
     return <div className="hero-body">
       <div className="container has-text-centered">
 
-        <div className="tabs is-centered is-hidden-touch">
+        <div className="tabs is-centered is-hidden-touch" style={{ borderBottom: '1px solid #ccc' }}>
           <ul>
             <li className={classNames({
               'is-active': match.path === '/'
@@ -27,7 +27,7 @@ export default class Main extends React.Component {
           </ul>
         </div> 
 
-        <div className="is-hidden-desktop" style={{ marginBottom: '25px' }}>
+        <div className="is-hidden-desktop" style={{ marginBottom: '25px', borderBottom: '1px solid #ccc', color: '#ccc' }}>
           <Link to="/">Experience</Link> | <Link to="/projects">Projects</Link> | <Link to="/hobbies">Hobbies</Link>
         </div>
 

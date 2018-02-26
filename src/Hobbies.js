@@ -16,7 +16,7 @@ export default class Hobbies extends React.Component {
 
       <div className="column">
         <p className="title is-4">Cooking</p>
-        <p className="subtitle">Did mention I live in Vermont...</p>
+        <p className="subtitle">Did I mention I live in Vermont...</p>
       </div>
 
       <div className="column">

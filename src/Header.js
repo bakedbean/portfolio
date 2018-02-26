@@ -37,7 +37,7 @@ export default class Header extends React.Component {
               </a>
               <a href="mailto:eben.goodman@gmail.com" className="navbar-item">
                 <span className="icon is-small">
-                  <i className="fa fa-medium"></i>
+                  <i className="fa fa-envelope"></i>
                 </span>&nbsp;Email
               </a>
               <a href="https://medium.com/@fatbeastie" className="navbar-item" target="_new">
