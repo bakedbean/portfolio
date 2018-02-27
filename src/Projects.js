@@ -1,14 +1,20 @@
 import React from 'react';
 
+const tagStyles = {
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '10px 0 10px 0'
+};
+
 export default class Projects extends React.Component {
   render() {
     return <nav className="columns">
       <div className="column has-text-centered">
         <div>
-          <a href="https://localvore.co" className="link is-info" target="_new">https://goodcalleats.com</a>
+          <p><a href="https://localvore.co" className="link is-info" target="_new">Goodcalleats</a></p>
           <a href="https://goodcalleats.com" target="_new"><img src="/images/goodcalleats.jpg" /></a>
           <p className="heading">Social meal planning</p>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={tagStyles}>
             <div className="tags">
               <span className="tag">Elixir</span>
               <span className="tag">React</span>
@@ -20,10 +26,10 @@ export default class Projects extends React.Component {
       </div>
       <div className="column has-text-centered">
         <div>
-          <a href="https://npmnotifier.com" className="link is-info" target="_new">https://npmnotifier.com</a>
+          <p><a href="https://npmnotifier.com" className="link is-info" target="_new">NPM Notifier</a></p>
           <a href="https://npmnotifier.com" target="_new"><img src="/images/npmnotifier.jpg" /></a>
           <p className="heading">Automated NPM package version management</p>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={tagStyles}>
             <div className="tags">
               <span className="tag">Node</span>
               <span className="tag">React</span>
@@ -39,7 +45,7 @@ export default class Projects extends React.Component {
           <a href="https://ebendev.com/hn" target="_new"><img src="/images/hn-remote.jpg" /></a>
           <p className="heading">Hacker News Who's Hiring Post: Remote positions</p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={tagStyles}>
           <div className="tags">
             <span className="tag">Firebase</span>
             <span className="tag">React</span>

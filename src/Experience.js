@@ -38,7 +38,7 @@ export default class Experience extends React.Component {
       <div className="level-item has-text-centered">
         <div>
           Concordant Rater Systems
-          <p className="heading">Clinical Trails (<em>acquired</em>)</p>
+          <p className="heading">Clinical Trials (<em>acquired</em>)</p>
           <p className="heading">IC / Lead / Full Stack</p>
           <p className="is-size-7">Boston, MA</p>
         </div>
